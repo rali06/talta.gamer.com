@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    position: relative;
+  }
+  
+  header {
+    background: linear-gradient(to right, #6C63FF, #9B66FF);
+    color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    background: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #6C63FF;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .video-container {
+    flex: 1 1 calc(25% - 20px); /* 4 columns with gap */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Space between rows */
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .video-container {
+      flex: 1 1 calc(50% - 20px); /* 2 columns with gap for smaller screens */
+    }
+  }
+
+  .video-container a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .video-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .video-container img:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-title {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #6C63FF, #9B66FF);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Contact area styles */
+  .contact-area {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6C63FF;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-area a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
